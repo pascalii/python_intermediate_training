@@ -28,7 +28,6 @@ class Student(Osoba):
     def __init__(self, imie: str, wiek: int, stypendium: int):
         super().__init__(imie, wiek)
         self.stypendium = stypendium
-        imie: str = self.imie
 
     def pokaz_finanse(self):
         return self.stypendium, self.imie
