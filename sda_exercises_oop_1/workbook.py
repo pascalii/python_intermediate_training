@@ -16,7 +16,7 @@ class Pracownik(Osoba):
     def pokaz_finanse(self):
         return self.stawka * self.liczba_godzin
 class Student(Osoba):
-    def __init__(self, imie, wiek, stypendium):
+    def __init__(self, imie: str, wiek: int, stypendium: int):
         super().__init__(imie, wiek)
         self.stypendium = stypendium
     def pokaz_finanse(self):
@@ -29,3 +29,5 @@ def main():
     person_list = [pracownik, pracownik2, student, student2]
     for person in person_list:
         print(person.pokaz_finanse())
+
+print(main())
