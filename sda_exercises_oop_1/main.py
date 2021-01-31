@@ -1,13 +1,15 @@
 from python_intermediate_training.sda_exercises_oop_1.cat import Cat
-
+from python_intermediate_training.sda_exercises_oop_1.dog import Dog
 
 def main():
     cat_object = Cat("Tom")
     cat_object_1 = Cat("Curt")
     cat_object_2 = Cat("Wojtek", "mial")
     cat_object_3 = Cat("Lazy", "I don't meow")
-
+    dog_object = Dog("Bernard", "woof")
     # cats = [cat_object_1, cat_object_2, cat_object_3, cat_object]
+    print(dog_object.make_sound())
+
     cats = []
     cats.append(cat_object)
     cats.append(cat_object_1)
