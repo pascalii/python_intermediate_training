@@ -1,6 +1,7 @@
 import abc
 from math import pi
 
+
 def count_area_func(*args):
     area = 0.0
     for arg in args:
@@ -20,6 +21,12 @@ class Figure(abc.ABC):
             area += figure.get_area()
         return area
 
+    @staticmethod
+    def check_area(some_area: float, figures: list) -> bool:
+        figure_area = Figure.count_area(figures)
+        return some_area > figure_area
+
+
 class Circle(Figure):
 
     def __init__(self, r):
@@ -27,6 +34,7 @@ class Circle(Figure):
 
     def get_area(self):
         return round(pi * self.r ** 2, 3)
+
 
 class Triangle(Figure):
 
@@ -36,6 +44,7 @@ class Triangle(Figure):
 
     def get_area(self):
         return (self.a * self.h) / 2
+
 
 class Rectangle(Figure):
 
