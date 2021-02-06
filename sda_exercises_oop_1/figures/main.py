@@ -1,7 +1,7 @@
 from python_intermediate_training.sda_exercises_oop_1.figures.figures_entities import *
 
 def main():
-    circle1 = Circle(5)
+    circle1 = Circle(20)
     circle2 = Circle(10)
     circle3 = Circle(15)
 
@@ -16,6 +16,9 @@ def main():
     print(circle1.get_area())
     print(triangle1.get_area())
     print(rectangle1.get_area())
+
+    area = Figure.count_area([triangle2, rectangle2, circle2])
+    print(area)
 
 
 if __name__ == "__main__":
