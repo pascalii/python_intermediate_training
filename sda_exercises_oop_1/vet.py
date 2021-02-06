@@ -6,11 +6,11 @@ class Vet:
 
     @staticmethod
     def sayCatHello(cat: Cat) -> str:
-        return f'Hi {cat.name}'
+        return f'Hi cat {cat.name}'
 
     @staticmethod
     def sayDogHello(dog: Dog) -> str:
-        return f'Hi {dog.name}'
+        return f'Hi dog {dog.name}'
 
     @staticmethod
     def sayAnimalHello(animal: Animal):

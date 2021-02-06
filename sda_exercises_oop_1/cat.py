@@ -3,7 +3,7 @@ from python_intermediate_training.sda_exercises_oop_1.animal import Animal
 
 class Cat(Animal, Movable):
     def __init__(self, name: str, sound='meeeooooww', eatean_mice = 0):
-        super().__init__(name)
+        super().__init__(name, sound)
         self.name = name
         self.sound = sound
         self.eaten_mice = eatean_mice
@@ -17,4 +17,4 @@ class Cat(Animal, Movable):
         return self.eaten_mice
 
     def move(self):
-        print("I walk")
+        return 'I walk'

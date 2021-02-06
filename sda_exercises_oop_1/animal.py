@@ -1,11 +1,12 @@
-from abc import ABC
+from abc import ABC, abstractmethod
 
 
 class Animal(ABC):
 
-    def __init__(self, name):
+    def __init__(self, name: str, sound: str):
         self.name = name
+        self.sound = sound
 
-    @property
-    def animal_name(self):
-        return self.name
+    @abstractmethod
+    def make_sound(self) -> str:
+        return f"{self.name} makes {self.sound}"
