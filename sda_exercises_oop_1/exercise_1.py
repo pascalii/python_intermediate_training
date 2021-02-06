@@ -1,5 +1,7 @@
 from typing import List
 from python_intermediate_training.sda_exercises_oop_1.cat import Cat
+from python_intermediate_training.sda_exercises_oop_1.dog import Dog
+
 # """ #1 it works """
 #
 #
@@ -87,3 +89,5 @@ class Dog:
 
     def get_dog_list(self) -> List[str]:
         return self.dog_list
+
+Dog.add_dog(dog_name="Boss", dog_sound="woofs")

@@ -7,17 +7,20 @@ def main():
     cat_object_2 = Cat("Wojtek", "mial")
     cat_object_3 = Cat("Lazy", "I don't meow")
     dog_object = Dog("Bernard", "woof")
-    # cats = [cat_object_1, cat_object_2, cat_object_3, cat_object]
-    print(dog_object.make_sound())
+    dog_object_1 = Dog("Sammy","peep")
 
-    cats = []
-    cats.append(cat_object)
-    cats.append(cat_object_1)
-    cats.append(cat_object_2)
-    cats.append(cat_object_3)
-    for cat in cats:
-        sound = cat.make_sound()
-        print(sound)
+
+
+
+    animal_list = []
+    animal_list.append(dog_object)
+    animal_list.append(dog_object_1)
+    animal_list.append(cat_object)
+    animal_list.append(cat_object_1)
+    animal_list.append(cat_object_2)
+    animal_list.append(cat_object_3)
+    for animal in animal_list:
+        print(animal.make_sound())
     cat_object.eat_mouse()
     cat_object.eat_mouse()
     cat_object.eat_mouse()

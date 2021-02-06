@@ -1,5 +1,8 @@
-class Dog:
+from python_intermediate_training.sda_exercises_oop_1.animal import Animal
+
+class Dog(Animal):
     def __init__(self, name: str, sound: str):
+        super().__init__(name)
         self.name = name
         self.sound = sound
 
