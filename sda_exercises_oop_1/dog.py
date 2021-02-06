@@ -1,7 +1,10 @@
 from python_intermediate_training.sda_exercises_oop_1.animal import Animal
 
 class Dog(Animal):
-    def __init__(self, name: str, sound: str):
+    def drink(self):
+        return f'Dog drinks toilet water'
+
+    def __init__(self, name: str, sound='bark!'):
         super().__init__(name, sound)
         self.name = name
         self.sound = sound

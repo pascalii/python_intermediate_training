@@ -10,3 +10,7 @@ class Animal(ABC):
     @abstractmethod
     def make_sound(self) -> str:
         return f"{self.name} makes {self.sound}"
+
+    @abstractmethod
+    def drink(self):
+        return f'{self.name} drinks water'

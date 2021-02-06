@@ -9,12 +9,14 @@ def main():
     cat_object_1 = Cat("Curt", "pszszsz")
     cat_object_2 = Cat("Wojtek", "mial")
     cat_object_3 = Cat("Lazy", "I don't meow")
+
     dog_object = Dog("Bernard", "woof")
     dog_object_1 = Dog("Sammy","peep")
 
     animal_list = []
     animal_list.append(dog_object)
     animal_list.append(dog_object_1)
+
     animal_list.append(cat_object)
     animal_list.append(cat_object_1)
     animal_list.append(cat_object_2)
@@ -46,5 +48,8 @@ def main():
     print(vet.sayCatHello(cat_object_2))
 
     print(Vet.sayAnimalHello(cat_object_3))
+
+
+
 if __name__ == "__main__":
     main()
