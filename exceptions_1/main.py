@@ -1,4 +1,4 @@
-from exceptions_1.excercises import task_2, task_3, task_4
+from exceptions_1.excercises import task_2, task_3, task_4, task_4_p_2, task_6, task_7
 
 
 def main():
@@ -12,12 +12,22 @@ def main():
 
     # result = task_3(11, 0)
     # print(result)
-    dictionary = {
-        'items': ['bread', 'butter']
-    }
-    task_4(dictionary)
 
+    # dictionary = {
+    #     'items': ['bread', 'butter']
+    # }
+    # task_4(dictionary)
+
+    # dictionary = {
+    #     'items': ['bread', 'butter']
+    # }
+    # task_4_p_2(dictionary)
+    #
+    # task_6()
+
+    task_7()
     print('finish')
+
 
 if __name__ == "__main__":
     main()
