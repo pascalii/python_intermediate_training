@@ -1,4 +1,4 @@
-from python_intermediate_training.sda_exercises_oop_1.figures.figures_entities import *
+from sda_exercises_oop_1.figures.figures_entities import *
 
 
 def main():
