@@ -1,3 +1,6 @@
+import sys
+
+
 def task_1():
     list_of_numbers = [1, 5, 8, 12, 33]
     print('task_1 before')
@@ -12,3 +15,20 @@ def task_1():
         result = list_of_numbers[5]
     except (IndexError, Exception) as e:
         print(f'Exception caught by tuple{e.args}')
+
+
+def task_2(name: str):
+    if len(name) <= 0:
+        raise ValueError('String is empty')
+    print(f'Given name is: {name}')
+
+
+def task_3(number: int, divisor: int):
+    result = 0
+    try:
+        result = number / divisor
+    except ZeroDivisionError as zde:
+        print(f'Dont divide by zero, dogg')
+        result = sys.float_info.max
+        # result = float(sys.maxsize)
+    return result
