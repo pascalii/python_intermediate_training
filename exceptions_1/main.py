@@ -1,4 +1,4 @@
-from exceptions_1.excercises import task_2, task_3
+from exceptions_1.excercises import task_2, task_3, task_4
 
 
 def main():
@@ -10,8 +10,12 @@ def main():
     # except Exception as e:
     #     print(f"Exception {e.args}")
 
-    result = task_3(11, 0)
-    print(result)
+    # result = task_3(11, 0)
+    # print(result)
+    dictionary = {
+        'items': ['bread', 'butter']
+    }
+    task_4(dictionary)
 
     print('finish')
 

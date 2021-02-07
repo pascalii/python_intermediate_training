@@ -32,3 +32,14 @@ def task_3(number: int, divisor: int):
         result = sys.float_info.max
         # result = float(sys.maxsize)
     return result
+
+
+def task_4(dictionary: dict):
+    key = 'items'
+    try:
+        items: list = dictionary[key]
+        for item in items:
+            print(item)
+    except KeyError as ke:
+        print(f'Key {key} not found, more info {ke.args}')
+
