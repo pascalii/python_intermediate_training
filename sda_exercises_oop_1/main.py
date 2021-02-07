@@ -1,7 +1,7 @@
-from python_intermediate_training.sda_exercises_oop_1.car import Car
-from python_intermediate_training.sda_exercises_oop_1.cat import Cat
-from python_intermediate_training.sda_exercises_oop_1.dog import Dog
-from python_intermediate_training.sda_exercises_oop_1.vet import Vet
+from sda_exercises_oop_1.car import Car
+from sda_exercises_oop_1.cat import Cat
+from sda_exercises_oop_1.dog import Dog
+from sda_exercises_oop_1.vet import Vet
 
 
 def main():
