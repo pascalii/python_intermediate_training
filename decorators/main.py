@@ -1,7 +1,25 @@
 from decorators.case_2 import read_file
 
 
+def catch_io_error_decorator(func):
+    def inner(*args, **kwargs):
+        try:
+            return func(*args, **kwargs)
+        except IOError as e:
+            print(f'IOError caught {e.args}')
+            return None
+
+    return inner
+
+@catch_io_error_decorator
+def throw_exception_file():
+    raise IOError('Test error')
+
+
 def main():
+    throw_exception_file()
+
+
 #     a, b = print_hello_yall(1, 2)
 #     print(f'In main: {a} {b}')
 #
@@ -15,7 +33,7 @@ def main():
 #
 #     return wrapper
 
-    read_file(file_path='./abc')
+# read_file(file_path='./abc')
 
 # @wrap_before_and_after
 # def print_hello_yall(a, b):
