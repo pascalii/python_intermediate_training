@@ -48,7 +48,7 @@ def main():
 #
 #     return wrapper
 
-# read_file(file_path='./abc')
+read_file(file_path='./abc')
 
 # @wrap_before_and_after
 # def print_hello_yall(a, b):
