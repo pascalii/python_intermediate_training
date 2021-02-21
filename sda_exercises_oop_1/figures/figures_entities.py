@@ -1,6 +1,7 @@
 import abc
 from math import pi
 
+<<<<<<< Updated upstream
 
 def count_area_func(*args):
     area = 0.0
@@ -9,11 +10,14 @@ def count_area_func(*args):
     return area
 
 
+=======
+>>>>>>> Stashed changes
 class Figure(abc.ABC):
     @abc.abstractmethod
     def get_area(self):
         pass
 
+<<<<<<< Updated upstream
     @staticmethod
     def count_area(figures: list) -> float:
         area = 0.0
@@ -27,14 +31,20 @@ class Figure(abc.ABC):
         return some_area > figure_area
 
 
+=======
+>>>>>>> Stashed changes
 class Circle(Figure):
 
     def __init__(self, r):
         self.r = r
 
     def get_area(self):
+<<<<<<< Updated upstream
         return round(pi * self.r ** 2, 3)
 
+=======
+        return pi * self.r ** 2
+>>>>>>> Stashed changes
 
 class Triangle(Figure):
 
@@ -45,7 +55,10 @@ class Triangle(Figure):
     def get_area(self):
         return (self.a * self.h) / 2
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 class Rectangle(Figure):
 
     def __init__(self, a, b):
@@ -53,4 +66,8 @@ class Rectangle(Figure):
         self.b = b
 
     def get_area(self):
+<<<<<<< Updated upstream
         return (self.a * self.b) / 2
+=======
+        return (self.a * self.b) / 2
+>>>>>>> Stashed changes

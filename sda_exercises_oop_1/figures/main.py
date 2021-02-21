@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 from sda_exercises_oop_1.figures.figures_entities import *
 
 
@@ -9,6 +10,18 @@ def main():
     triangle1 = Triangle(15, 5)
     triangle2 = Triangle(12, 25)
     triangle3 = Triangle(15, 20)
+=======
+from python_intermediate_training.sda_exercises_oop_1.figures.figures_entities import *
+
+def main():
+    circle1 = Circle(5)
+    circle2 = Circle(10)
+    circle3 = Circle(15)
+
+    triangle1 = Triangle(15,5)
+    triangle2 = Triangle(12,25)
+    triangle3 = Triangle(15,20)
+>>>>>>> Stashed changes
 
     rectangle1 = Rectangle(35, 5)
     rectangle2 = Rectangle(5, 5)
@@ -18,6 +31,7 @@ def main():
     print(triangle1.get_area())
     print(rectangle1.get_area())
 
+<<<<<<< Updated upstream
     # area = Figure.count_area([triangle2, rectangle2, circle2])
     # print(area)
 
@@ -31,3 +45,8 @@ def main():
 
 if __name__ == "__main__":
     main()
+=======
+
+if __name__ == "__main__":
+    main()
+>>>>>>> Stashed changes
